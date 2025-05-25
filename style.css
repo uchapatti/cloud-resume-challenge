@@ -1,34 +1,19 @@
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-}
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
 
-header {
-  background: #0366d6;
-  color: white;
-  padding: 1rem 0;
-  text-align: center;
-}
+  nav, button, footer {
+    display: none;
+  }
 
-nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
-}
+  section {
+    page-break-inside: avoid;
+  }
 
-section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
+  h1, h2, h3 {
+    color: black !important;
+  }
 }
