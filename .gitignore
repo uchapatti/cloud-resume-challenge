@@ -1,0 +1,11 @@
+# Azure credentials or secrets
+.env
+credentials.json
+
+# Dependency folders
+node_modules/
+__pycache__
+
+# System files
+.DS_Store
+Thumbs.db
